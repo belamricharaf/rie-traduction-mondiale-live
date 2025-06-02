@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -6,11 +7,23 @@ import { useState } from "react";
 import TranslatorCard from "@/components/TranslatorCard";
 import BookingModal from "@/components/BookingModal";
 
+interface Translator {
+  id: number;
+  name: string;
+  specialty: string;
+  languages: string[];
+  rating: number;
+  price: number;
+  avatar: string;
+  available: boolean;
+  experience: string;
+}
+
 const Index = () => {
-  const [selectedTranslator, setSelectedTranslator] = useState(null);
+  const [selectedTranslator, setSelectedTranslator] = useState<Translator | null>(null);
   const [isBookingOpen, setIsBookingOpen] = useState(false);
 
-  const translators = [
+  const translators: Translator[] = [
     {
       id: 1,
       name: "Amina Benali",
@@ -46,7 +59,7 @@ const Index = () => {
     }
   ];
 
-  const handleBookTranslator = (translator) => {
+  const handleBookTranslator = (translator: Translator) => {
     setSelectedTranslator(translator);
     setIsBookingOpen(true);
   };
