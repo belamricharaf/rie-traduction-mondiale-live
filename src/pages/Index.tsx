@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -61,7 +60,7 @@ const Index = () => {
             <div className="flex items-center space-x-2">
               <Globe className="h-8 w-8 text-emerald-600" />
               <span className="text-2xl font-bold bg-gradient-to-r from-emerald-600 to-green-700 bg-clip-text text-transparent">
-                TradAlg
+                Manar Traduction
               </span>
             </div>
             <div className="hidden md:flex items-center space-x-8">
@@ -230,7 +229,7 @@ const Index = () => {
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <Globe className="h-8 w-8 text-emerald-400" />
-                <span className="text-2xl font-bold">TradAlg</span>
+                <span className="text-2xl font-bold">Manar Traduction</span>
               </div>
               <p className="text-gray-400">
                 La plateforme de référence pour la traduction professionnelle en temps réel.
@@ -257,14 +256,14 @@ const Index = () => {
             <div>
               <h3 className="font-semibold mb-4">Contact</h3>
               <ul className="space-y-2 text-gray-400">
-                <li>support@tradalg.com</li>
+                <li>support@manartraduction.com</li>
                 <li>+213 123 456 789</li>
                 <li>Alger, Algérie</li>
               </ul>
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 TradAlg. Tous droits réservés.</p>
+            <p>&copy; 2024 Manar Traduction. Tous droits réservés.</p>
           </div>
         </div>
       </footer>
